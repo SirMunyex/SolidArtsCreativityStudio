@@ -1,3 +1,17 @@
+.allsides-1 {
+  background:
+    linear-gradient(currentColor 0 0) 100% 0,
+    linear-gradient(currentColor 0 0) 0 0,
+    linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 100% 100%;
+  background-size: var(--d, 0) 3px, 3px var(--d, 0);
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.allsides-1:hover {
+  --d: 100%;
+}
+
 .button {
     list-style: none;
     min-width: 100px;
@@ -9,16 +23,6 @@
 .button a {
     text-decoration: none;
     color: white;
-}
-
-
-.navlist {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0px;
 }
 
 .navlist :hover {
@@ -33,39 +37,9 @@
     z-index: 1;
 }
 
-@media min-width(901px) {
-    .logo-container {
-        display: flex;
-        justify-content: center;
-        background-color: rgb(170, 16, 16);
-    }
-    .navbar {
-        display: flex;
-        justify-content: center;
-        background-color: rgb(170, 16, 16);
-        height: 100%;
-        padding: 0px;
-    }
-}
-
 .email {
     background-color: rgb(170, 16, 16);
     border: none
-}
-
-.btn-primary:hover:active {
-    background-color: rgb(145, 17, 17);
-    border: none
-}
-
-.whatsapp {
-    background-color: green;
-    border: none;
-    color: white;
-}
-
-.btn-outline-secondary:hover:active {
-    background-color: rgb(7, 107, 7);
 }
 
 /* footer 2 css */
@@ -99,6 +73,16 @@
     align-items: flex-start;
     display: flex;
   }
+
+  @media (max-width: 575px) {
+    .footer-wrapper-two-2 {
+      justify-content: space-between;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+    }
+}
   
   .footer-title-2 {
     font-size: 18px;
