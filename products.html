@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid Arts.CS</title>
+    
+    <link href="./css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <!-- Mobile Navigation Menu -->
+  <div class="mobile-nav bg-primary">
+    <a href="#home" class="active2"><img src="./resources/logo-side-by-side-white.png" style="width: 220px"/></a>
+    <div id="myLinks">
+      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+      <a class="nav-link" href="./products.html">Products</a>
+      <a class="nav-link" href="./Under Construction/portfolio.html">Portfolio</a>
+      <a class="nav-link" href="#home">About</a>
+      <a class="nav-link" href="#Contact" style="text-wrap: nowrap;">Contact Us</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5m-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5"/>
+      </svg></i>
+    </a>
+  </div>
+
+
+<!-- Collapsible Navigation Bar -->
+
+<div class="navbar bg-primary navbar-fixed-top" data-bs-theme="dark">
+    <div class="container container-fluid">
+  
+      <div class="navbar-brand">
+        <img src="./resources/logo-side-by-side-white.png" style="width: 220px"/>
+       </div>
+  
+      <nav class="navbar-expand-lg">
+        <div class="container-fluid">
+          
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navlist navbar-nav me-auto mb-2 mb-lg-0">
+              <li class=" button">
+               <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+             </li>
+             <li class=" button">
+               <a class="nav-link" href="./products.html">Products</a>
+             </li>
+              <li class=" button">
+               <a class="nav-link" href="./Under Construction/portfolio.html">Portfolio</a>
+             </li>
+             <li class=" button">
+               <a class="nav-link" href="#home">About</a>
+             </li>
+              <li class=" button">
+               <a class="nav-link" href="#Contact" style="text-wrap: nowrap;">Contact Us</a>
+             </li>
+             <li class=" button">
+               <a class="nav-link" href="#home">Blog</a>
+             </li>
+            
+           </ul>
+           <!-- <form class="d-flex" role="search">
+             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+             <button class="btn btn-outline-success" type="submit">Search</button>
+           </form> -->
+         </div>
+        </div>
+      </nav>
+  
+    </div>
+  </div>
+
+
+<section class="products container container-fluid">
+
+    <ul class="product-items">
+        <li  class="product-card">
+            <div class="card" style="width: 18rem;">
+            <img src="./resources/product-images/backdrop-banner.jpg" class="card-img-top" alt="back-drop banner image">
+            <div class="card-body">
+              <h5 class="card-title">Back-drop Banner</h5>
+              <p class="card-text">From <span>$120</span></p>
+              <a href="./index.html#Contact" target="_blank" class="btn btn-primary">Get a quote</a>
+            </div>
+          </div>
+        </li>
+        
+        <li class="product-card">
+            <div class="card" style="width: 18rem;">
+            <img src="./resources/product-images/popup-banners.jpg" class="card-img-top" alt="pop-up banner image">
+            <div class="card-body">
+              <h5 class="card-title">Pop-up Banner</h5>
+              <p class="card-text">From <span>$50</span></p>
+              <a href="./index.html#Contact" target="_blank" class="btn btn-primary">Get a quote</a>
+            </div>
+          </div>
+        </li>
+        <li class="product-card">
+            <div class="card" style="width: 18rem;">
+            <img src="./resources/product-images/gazebo.jpg" class="card-img-top" alt="gazebo image">
+            <div class="card-body">
+              <h5 class="card-title">Gazebo</h5>
+              <p class="card-text">From <span>$320</span></p>
+              <a href="./index.html#Contact" target="_blank" class="btn btn-primary">Get a quote</a>
+            </div>
+          </div>
+        </li>
+    </ul>
+
+</section>
+
+
+
+
+
+
+  <section class="footer-light-2" style="background-color: rgb(255, 216, 117);">
+
+    <!-- <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <img class="bi me-2" width="40" height="40" src="./favicon-icon-maroon.png" alt="">
+            </a>
+            <p class="text-body-secondary">© 2023</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Address</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">Suite 7 - 9, 1st Floor<br>St Andrews House,<br>Cnr S. Machel &amp; L. Takawira</li>
+              
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Contact Numbers</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">+263 (242) 225 5851<br>+263 77 568 6754<br>+263 77 660 2420<br><br></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+        </footer> -->
+      </div>
+    <div class="container">
+      <div class="footer-wrapper-two-2">
+        <a href="#" class="footer-brand-2 w-inline-block"><img src="./favicon-icon-maroon.png" loading="lazy" width="89" sizes="89px" alt=""></a>
+        <div class="footer-block-two-2">
+          <div class="footer-title-2">Address:</div>
+          <a href="#" class="footer-link-two-2">Suite 7 - 9, 1st Floor<br>St Andrews House,<br>Cnr S. Machel &amp; L. Takawira</a>
+        </div>
+        <div class="footer-block-two-2">
+          <div class="footer-title-2">Contacts:</div>
+          <a href="#" class="footer-link-two-2">+263 (242) 225 5851<br>+263 77 568 6754<br>+263 77 660 2420<br><br></a>
+        </div>
+      </div>
+      <div class="footer-divider-two-2"></div>
+      <div class="footer-bottom-2">
+        <div class="footer-copyright-2">© 2024 Solid Arts.CS. All rights reserved</div>
+        <div class="footer-social-block-two-2">
+          <a href="#" class="footer-social-link-2 w-inline-block"><img src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124ac76f12aaec_product%20icon-2.svg" loading="lazy" alt=""></a>
+          <a href="#" class="footer-social-link-2 w-inline-block"><img src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a4a9512aae0_product%20icon-1.svg" loading="lazy" alt=""></a>
+          <a href="#" class="footer-social-link-2 w-inline-block"><img src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a853712aad7_product%20icon.svg" loading="lazy" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+  
+</html>
