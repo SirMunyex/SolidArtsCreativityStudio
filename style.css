@@ -61,8 +61,8 @@
 
 /* footer 2 css */
 
-.footer-light-2 {
-  background-color: var(--golden-yellow);
+.footer-light {
+  background-color: rgb(255, 216, 117);
   -webkit-text-fill-color: inherit;
   background-clip: padding-box;
   border-bottom: 1px solid #e4ebf3;
@@ -70,20 +70,20 @@
   position: relative;
 }
 
-.container-7 {
+.footer-container {
   width: 100%;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.footer-wrapper-two-2 {
+.footer-wrapper {
   justify-content: space-between;
   align-items: flex-start;
   display: flex;
 }
 
-.footer-block-two-2 {
+.footer-block {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -100,82 +100,23 @@
   }
 }
 
-.footer-title-2 {
+.footer-title {
   font-size: 18px;
   font-weight: 500;
   line-height: 32px;
 }
 
-.footer-link-two-2 {
+.footer-link {
   color: #1a1b1f;
   margin-top: 20px;
   text-decoration: none;
 }
 
-.footer-link-two-2:hover {
+.footer-link:hover {
   color: rgba(26, 27, 31, 0.75);
 }
 
-.footer-form-2 {
-  width: 315px;
-  max-width: 100%;
-  margin-bottom: 0;
-}
-
-.footer-form-block-2 {
-  justify-content: center;
-  align-items: center;
-  margin-top: 24px;
-  display: flex;
-}
-
-.footer-form-field-2 {
-  height: 48px;
-  border: 1px solid #a6b1bf;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  margin-bottom: 0;
-  padding: 12px 16px;
-  font-size: 14px;
-  line-height: 22px;
-  transition: all 0.2s;
-}
-
-.footer-form-field-2:hover,
-.footer-form-field-2:focus {
-  border-color: #76879d;
-}
-
-.footer-form-field-2::-ms-input-placeholder {
-  color: rgba(26, 27, 31, 0.8);
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.footer-form-field-2::placeholder {
-  color: rgba(26, 27, 31, 0.8);
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.footer-form-submit-2 {
-  width: 50px;
-  height: 48px;
-  background-color: #1a1b1f;
-  background-image: url("../images/");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: auto;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  transition: all 0.2s;
-}
-
-.footer-form-submit-2:hover {
-  background-color: #3a4554;
-}
-
-.footer-divider-two-2 {
+.footer-divider {
   width: 100%;
   height: 1px;
   background-color: #e4ebf3;
@@ -183,17 +124,17 @@
   margin-bottom: 40px;
 }
 
-.footer-bottom-2 {
+.footer-bottom {
   justify-content: space-between;
   align-items: center;
   display: flex;
 }
 
-.footer-copyright-2 {
+.footer-copyright {
   color: #3a4554;
 }
 
-.footer-social-block-two-2 {
+.footer-social-block {
   justify-content: flex-start;
   align-items: center;
   margin-top: 0;
@@ -201,7 +142,7 @@
   display: flex;
 }
 
-.footer-social-link-2 {
+.footer-social-link {
   margin-left: 12px;
 }
 

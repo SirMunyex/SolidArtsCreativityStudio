@@ -1,415 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solid Arts.CS</title>
-    
-    <link href="./css/main.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
 
-</head>
-<body>
-
-  <!-- Mobile Navigation Menu -->
-  <div class="mobile-nav bg-primary">
-    <a href="#home" class="active2"><img src="./resources/logo-side-by-side-white.png" style="width: 220px"/></a>
-    <div id="myLinks">
-      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-      <a class="nav-link" href="./products.html">Products</a>
-      <a class="nav-link" href="./Under Construction/portfolio.html">Portfolio</a>
-      <a class="nav-link" href="#home">About</a>
-      <a class="nav-link" href="#Contact" style="text-wrap: nowrap;">Contact Us</a>
+    <link href="./css/main.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav bg-primary">
+      <a href="#home" class="active2"
+        ><img
+          src="./resources/logo-side-by-side-white.png"
+          style="width: 220px"
+      /></a>
+      <div id="myLinks">
+        <a class="nav-link active" aria-current="page" href="./index.html"
+          >Home</a
+        >
+        <a class="nav-link" href="./products.html">Products</a>
+        <a class="nav-link" href="./Under Construction/portfolio.html"
+          >Portfolio</a
+        >
+        <a class="nav-link" href="#home">About</a>
+        <a class="nav-link" href="#Contact" style="text-wrap: nowrap"
+          >Contact Us</a
+        >
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i
+          ><img
+            src="./resources/svg-icons/icons8-hamburger.svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+        /></i>
+      </a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i><img src="./resources/svg-icons/icons8-hamburger.svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16"/></i>
-    </a>
-  </div>
 
-<!-- Collapsible Navigation Bar -->
+    <!-- Collapsible Navigation Bar -->
 
-<div class="navbar bg-primary navbar-fixed-top" data-bs-theme="dark">
-    <div class="container container-fluid">
-  
-      <div class="navbar-brand">
-        <img src="./resources/logo-side-by-side-white.png" style="width: 220px"/>
-       </div>
-  
-      <nav class="navbar-expand-md">
-        <div class="container-fluid">
-          
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-          </button>
+    <div class="navbar bg-primary navbar-fixed-top" data-bs-theme="dark">
+      <div class="container container-fluid">
+        <div class="navbar-brand">
+          <img
+            src="./resources/logo-side-by-side-white.png"
+            style="width: 220px" />
+        </div>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navlist navbar-nav me-auto mb-2 mb-lg-0">
-              <li class=" button">
-               <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-             </li>
-             <li class=" button">
-               <a class="nav-link" href="./products.html">Products</a>
-             </li>
-              <li class=" button">
-               <a class="nav-link" href="./Under Construction/portfolio.html">Portfolio</a>
-             </li>
-             <li class=" button">
-               <a class="nav-link" href="#home">About</a>
-             </li>
-              <li class=" button">
-               <a class="nav-link" href="#Contact" style="text-wrap: nowrap;">Contact Us</a>
-             </li>
-             <li class=" button">
-               <a class="nav-link" href="#home">Blog</a>
-             </li>
-            
-           </ul>
-           <!-- <form class="d-flex" role="search">
+        <nav class="navbar-expand-md">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navlist navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="button">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="button">
+                  <a class="nav-link" href="./products.html">Products</a>
+                </li>
+                <li class="button">
+                  <a class="nav-link" href="./Under Construction/portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="button">
+                  <a class="nav-link" href="#home">About</a>
+                </li>
+                <li class="button">
+                  <a class="nav-link" href="#Contact" style="text-wrap: nowrap"
+                    >Contact Us</a
+                  >
+                </li>
+                <li class="button">
+                  <a class="nav-link" href="#home">Blog</a>
+                </li>
+              </ul>
+              <!-- <form class="d-flex" role="search">
              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
              <button class="btn btn-outline-success" type="submit">Search</button>
            </form> -->
-         </div>
-        </div>
-      </nav>
-  
-    </div>
-  </div>
-  
-  
-  <!-- Hero Section -->
-  
-  <section class="intro" style="background-image: url('./resources/background-image.png'); background-size: cover; background-attachment: fixed; height: auto; margin-top: 0px; margin-bottom: 0px; display: block" >
-  
-      <div class="container col-xxl-8 px-4 py-5">
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-              
-              <!-- Carousel -->
-              
-              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./resources/Carousel Photo/carousel photo_1.png" class="d-block w-100 rounded" alt="Corporate gifts">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./resources/Carousel Photo/carousel photo_2.png" class="d-block w-100 rounded" alt="Corporate wear">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./resources/Carousel Photo/carousel photo_3.png" class="d-block w-100 rounded" alt="Banners">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./resources/Carousel Photo/carousel photo_4.png" class="d-block w-100 rounded" alt="Banners">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./resources/Carousel Photo/carousel photo_5.png" class="d-block w-100 rounded" alt="Stationery">
-                  </div>
-                </div>
-              </div>
-  
             </div>
-              <div class="col-lg-6">
-                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Print - Brand - Design</h1>
-                  <p class="lead">We are a leading provider of comprehensive design, print, and branding solutions. We are dedicated to delivering distinctive branding and marketing tools that yield tangible results for all our clients. We also offer <span style="color:brown; font-weight:bold" href="#">Alternative Media Solutions</span> designed to equip our clients with a competitive advantage in their respective market segments.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button type="button" class="btn btn-primary btn-lg px-4 email me-md-2"> <img src="resources/email-icon-white.png" style="width: 20px; margin:0px; padding-right: 3px"><a href="mailto: solidarts.cs@gmail.com" style="text-decoration: none; color: white">Email Us</a></button>
-                  <button type="button" class="btn btn-success  whatsapp btn-lg px-4"> <img src="./resources/whatsapp-icon-white.png" style="width: 20px; margin:0px; padding: 0px"><a href="https://wa.me/message/ZK4YGDP7GAO7I1" style="text-decoration: none; color: white">WhatsApp Us</a></button>
-                </div>
-              </div>
-            </div>
+          </div>
+        </nav>
       </div>
-  
-  </section>
-  
-  <!-- Featured Services Section -->
-  
-  <section-2>
-      <div class="container px-4 py-5" id="featured-3">
-          <h2 class="pb-2 border-bottom">Featured Services</h2>
-          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div class="feature col">
-              <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                <img src="./resources/canvas_printing.png" height="300px" style="border: transparent; border-radius:25px">
+    </div>
+
+    <!-- Hero Section -->
+
+    <section
+      class="intro"
+      style="
+        background-image: url('./resources/background-image.png');
+        background-size: cover;
+        background-attachment: fixed;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: block;
+      ">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <!-- Carousel -->
+
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./resources/Carousel Photo/carousel photo_1.png"
+                    class="d-block w-100 rounded"
+                    alt="Corporate gifts" />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./resources/Carousel Photo/carousel photo_2.png"
+                    class="d-block w-100 rounded"
+                    alt="Corporate wear" />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./resources/Carousel Photo/carousel photo_3.png"
+                    class="d-block w-100 rounded"
+                    alt="Banners" />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./resources/Carousel Photo/carousel photo_4.png"
+                    class="d-block w-100 rounded"
+                    alt="Banners" />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./resources/Carousel Photo/carousel photo_5.png"
+                    class="d-block w-100 rounded"
+                    alt="Stationery" />
+                </div>
               </div>
-              <h3 class="fs-2 text-body-emphasis text-muted">Design</h3>
-              <p>Our team has the expertise and experience to understand that seeing is believing and hence thrive to create visual communication aides that easily convey accurate messages to your desired audience. Whatever you can imagine we can bring it to life through stepwise concept development.</p>
-              <a href="#Contact" class="icon-link">
-                  Get a quote
-                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-              </a>
             </div>
-            <div class="feature col">
-              <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                <img src="./resources/large_format_printing.png" height="300px" style="border: transparent; border-radius:25px">
-              </div>
-              <h3 class="fs-2 text-body-emphasis text-muted">Print</h3>
-              <p>Our wide format printing division is an initiative driven to bring your brand to life through the creation of branding and signage materials which are unique and targeted to your audience of choice so you to give you a competitive advantage in the market.</p>
-              <a href="./products.html" class="icon-link">
-                  See more
-                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-              </a>
-            </div>
-            <div class="feature col">
-              <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                  <img src="./resources/indoor_outdoor_banners.png" height="300px" style="border: transparent; border-radius:25px">
-              </div>
-              <h3 class="fs-2 text-body-emphasis text-muted">Branding</h3>
-              <p>We help you make bigger things happen by meeting all your corporate wear, corporate gifts and stationery needs. You name it, we print it for you.</p>
-              <a href="./products.html" class="icon-link">
-                See more
-                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-              </a>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Print - Brand - Design
+            </h1>
+            <p class="lead">
+              We are a leading provider of comprehensive design, print, and
+              branding solutions. We are dedicated to delivering distinctive
+              branding and marketing tools that yield tangible results for all
+              our clients. We also offer
+              <span style="color: brown; font-weight: bold" href="#"
+                >Alternative Media Solutions</span
+              >
+              designed to equip our clients with a competitive advantage in
+              their respective market segments.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4 email me-md-2">
+                <img
+                  src="resources/email-icon-white.png"
+                  style="width: 20px; margin: 0px; padding-right: 3px" /><a
+                  href="mailto: solidarts.cs@gmail.com"
+                  style="text-decoration: none; color: white"
+                  >Email Us</a
+                >
+              </button>
+              <button
+                type="button"
+                class="btn btn-success whatsapp btn-lg px-4">
+                <img
+                  src="./resources/whatsapp-icon-white.png"
+                  style="width: 20px; margin: 0px; padding: 0px" /><a
+                  href="https://wa.me/message/ZK4YGDP7GAO7I1"
+                  style="text-decoration: none; color: white"
+                  >WhatsApp Us</a
+                >
+              </button>
             </div>
           </div>
         </div>
-  
-  </section-2>
-  
-  <!-- How we work Section -->
+      </div>
+    </section>
 
-  <section-3 class="intro" style="background-image: url('./resources/background-image.png'); background-size: cover; background-attachment: fixed; height: auto; margin-top: 0px; margin-bottom: 0px; display: block" >
-    <div class="container px-4 py-5" id="">
+    <!-- Featured Services Section -->
+
+    <section-2>
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Featured Services</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+              <img
+                src="./resources/canvas_printing.png"
+                height="300px"
+                style="border: transparent; border-radius: 25px" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis text-muted">Design</h3>
+            <p>
+              Our team has the expertise and experience to understand that
+              seeing is believing and hence thrive to create visual
+              communication aides that easily convey accurate messages to your
+              desired audience. Whatever you can imagine we can bring it to life
+              through stepwise concept development.
+            </p>
+            <a href="#Contact" class="icon-link">
+              Get a quote
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+              <img
+                src="./resources/large_format_printing.png"
+                height="300px"
+                style="border: transparent; border-radius: 25px" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis text-muted">Print</h3>
+            <p>
+              Our wide format printing division is an initiative driven to bring
+              your brand to life through the creation of branding and signage
+              materials which are unique and targeted to your audience of choice
+              so you to give you a competitive advantage in the market.
+            </p>
+            <a href="./products.html" class="icon-link">
+              See more
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+              <img
+                src="./resources/indoor_outdoor_banners.png"
+                height="300px"
+                style="border: transparent; border-radius: 25px" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis text-muted">Branding</h3>
+            <p>
+              We help you make bigger things happen by meeting all your
+              corporate wear, corporate gifts and stationery needs. You name it,
+              we print it for you.
+            </p>
+            <a href="./products.html" class="icon-link">
+              See more
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section-2>
+
+    <!-- How we work Section -->
+
+    <section-3
+      class="intro"
+      style="
+        background-image: url('./resources/background-image.png');
+        background-size: cover;
+        background-attachment: fixed;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: block;
+      ">
+      <div class="container px-4 py-5" id="">
         <h2 class="pb-2 border-bottom">How We Work</h2>
-        <div class="d-lg-flex flex-row mb-3 justify-content-between text-center">
+        <div
+          class="d-lg-flex flex-row mb-3 justify-content-between text-center">
           <div class="mb-auto px-4">
-            <img src="./resources/placeholder-image.png" style="height: 200px; border-radius: 50%;" class="my-4" alt="">
+            <img
+              src="./resources/placeholder-image.png"
+              style="height: 200px; border-radius: 50%"
+              class="my-4"
+              alt="" />
             <h4 class="mb-4 text-center">1. Place Your Order</h4>
             <p class="text-center">
-            Have a chat to one of our friendly staff members. They will point you in the right direction and they will be you point of contact throughout.
-            <br/>
-            <br/>
-            They will help you choose the right product with the right artwork option. They will also answer any questions you might have. 
-          </p>
+              Have a chat to one of our friendly staff members. They will point
+              you in the right direction and they will be you point of contact
+              throughout.
+              <br />
+              <br />
+              They will help you choose the right product with the right artwork
+              option. They will also answer any questions you might have.
+            </p>
           </div>
           <div class="px-4">
-            <img src="./resources/placeholder-image.png" style="height: 200px; border-radius: 50%;" class="my-4" alt="">
-            <h4 class="mb-4 text-center">2. We Collobrate Together On Design</h4>
+            <img
+              src="./resources/placeholder-image.png"
+              style="height: 200px; border-radius: 50%"
+              class="my-4"
+              alt="" />
+            <h4 class="mb-4 text-center">
+              2. We Collobrate Together On Design
+            </h4>
             <p class="text-center">
-            You can use any one of our online colloboration tools to share your artwork with us when placing your order.
-            <br/>
-            <br/>
-            OR
-            <br/>
-            <br/>
-            You can come in for assistance with editing your existing design or with the creation of a new one. We will help with creating the right design for your purposes.
-          </p>
+              You can use any one of our online colloboration tools to share
+              your artwork with us when placing your order.
+              <br />
+              <br />
+              OR
+              <br />
+              <br />
+              You can come in for assistance with editing your existing design
+              or with the creation of a new one. We will help with creating the
+              right design for your purposes.
+            </p>
           </div>
           <div class="px-4">
-            <img src="./resources/placeholder-image.png" style="height: 200px; border-radius: 50%;" class="my-4" alt="">
+            <img
+              src="./resources/placeholder-image.png"
+              style="height: 200px; border-radius: 50%"
+              class="my-4"
+              alt="" />
             <h4 class="mb-4 text-center">3. We Print</h4>
             <p class="text-center">
-            Once artworks have been approved, we then move them into production where the final product will be made to your specifications.
-            <br/>
-            <br/>
-            It generally takes 48 hours to produce your product after artwork approval. 
-          </p>
+              Once artworks have been approved, we then move them into
+              production where the final product will be made to your
+              specifications.
+              <br />
+              <br />
+              It generally takes 48 hours to produce your product after artwork
+              approval.
+            </p>
           </div>
           <div class="px-4">
-            <img src="./resources/placeholder-image.png" style="height: 200px; border-radius: 50%;" class="my-4" alt="">
+            <img
+              src="./resources/placeholder-image.png"
+              style="height: 200px; border-radius: 50%"
+              class="my-4"
+              alt="" />
             <h4 class="mb-4 text-center">4. We Deliver or You Pick Up</h4>
             <p class="text-center">
-            Once you product is finished, we can ship all around Zimbawe from Harare to your selected destination (NB. Shipping may attract an extra cost).
-            <br/>
-            <br/>
-            You can also choose to come and collect from our work facilities.
-          </p>
+              Once you product is finished, we can ship all around Zimbawe from
+              Harare to your selected destination (NB. Shipping may attract an
+              extra cost).
+              <br />
+              <br />
+              You can also choose to come and collect from our work facilities.
+            </p>
           </div>
         </div>
-        
-    </div>
-  </section-3>
+      </div>
+    </section-3>
 
+    <!-- Beginning of Why Us Section -->
 
-  <!-- Why Us Section -->
-  
-  <section-3>
-    <div class="container px-4 py-5" id="featured-3">
+    <section-3>
+      <div class="container px-4 py-5" id="featured-3">
         <h2 class="pb-2 border-bottom">Why Choose Us</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-10 my-5">
           <p class="col mb-5 bg-muted">
-            Solid Arts Creativity Studio has been operating, producing and delivering design, printing and marketing solutions that help businesses grow since 2017. As a Commercial Printing Company based in Harare, Zimbabwe we have an established online presence as well as strong partnerships with various transporters which enables us to offer printing services to various clients accross the country and beyond the borders of Zimbabwe. 
-            <br/>
-            <br/>
-            With a team of experts on hand, offering great Customer Service and using the latest technology, materials and techniques we have managed to consistently offer tailor-made print products of the highest quality, on time and within budget for all our clients. Whether it’s stationery, brochures, business cards, books, flyers, corporate gifts or corporate we do it all. From innovative design to execution and delivery, we are here to help you! Our hands-on attentive customer service has always been the focus of our business. We care about your business and want it to look and feel the best it can.
+            Solid Arts Creativity Studio has been operating, producing and
+            delivering design, printing and marketing solutions that help
+            businesses grow since 2017. As a Commercial Printing Company based
+            in Harare, Zimbabwe we have an established online presence as well
+            as strong partnerships with various transporters which enables us to
+            offer printing services to various clients accross the country and
+            beyond the borders of Zimbabwe.
+            <br />
+            <br />
+            With a team of experts on hand, offering great Customer Service and
+            using the latest technology, materials and techniques we have
+            managed to consistently offer tailor-made print products of the
+            highest quality, on time and within budget for all our clients.
+            Whether it’s stationery, brochures, business cards, books, flyers,
+            corporate gifts or corporate we do it all. From innovative design to
+            execution and delivery, we are here to help you! Our hands-on
+            attentive customer service has always been the focus of our
+            business. We care about your business and want it to look and feel
+            the best it can.
           </p>
           <p class="col mb-5">
-            We understand that meeting deadlines while providing excellent customer service and high quality printing products is key to satisfying our clients. We therefore strive to constantly improve our services, product quality, print materials, sales and production levels, all while meeting demands from our local and international clients. We guarantee outstanding, flexible customer service is provided to all our clients at all times.
-            <br/>
-            <br/>
-            We also understand that price is a critical variable, as such we offer the most competitive pricing solutions in market without compromising quality to place ourselves ahead of the competition. If you do happen to find a better price on our listed products with comparable quality, we will be happy to beat it by 5%!!! <span style="color:brown; font-weight:bold" href="#">Now that's a good deal.</span>
+            We understand that meeting deadlines while providing excellent
+            customer service and high quality printing products is key to
+            satisfying our clients. We therefore strive to constantly improve
+            our services, product quality, print materials, sales and production
+            levels, all while meeting demands from our local and international
+            clients. We guarantee outstanding, flexible customer service is
+            provided to all our clients at all times.
+            <br />
+            <br />
+            We also understand that price is a critical variable, as such we
+            offer the most competitive pricing solutions in market without
+            compromising quality to place ourselves ahead of the competition. If
+            you do happen to find a better price on our listed products with
+            comparable quality, we will be happy to beat it by 5%!!!
+            <span style="color: brown; font-weight: bold" href="#"
+              >Now that's a good deal.</span
+            >
           </p>
         </div>
-        
-    </div>
-  </section-3>
-  
-  <!-- Footer Section -->
-  
-  <!-- <footer>
-  
+      </div>
+    </section-3>
+
+    <!-- End of Why Us Section -->
+
+    <!-- Contact us Section -->
+
+    <section
+      id="Contact"
+      class="bg-light py-5 py-xl-6"
+      style="
+        background-image: url('./resources/contact-form-background-img.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: block;
+      ">
+      <div class="container mb-5 mb-md-6">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center">
+            <h2 class="pb-2">Send us a message</h2>
+          </div>
+        </div>
+      </div>
       <div class="container">
-          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-            <div class="col-md-4 d-flex align-items-center">
-              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <img src="./favicon-icon-grey-maroon.png" class="bi" height="24"><use url="../resources/logo-side-by-side-full-color.png"></use></svg>
-              </a>
-              <span class="mb-3 mb-md-0 text-body-secondary">© Solid Arts.CS 2023</span>
-            </div>
-        
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-              <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./resources/instagram-icon.png" class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./resources/facebook-icon.png"  class="bi" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-            </ul>
-          </footer>
-        </div>
-  
-  </footer> -->
-  
-  <!-- Contact us Section -->
-  
-  <section id="Contact" class="bg-light py-5 py-xl-6" style="background-image: url('./resources/contact-form-background-img.jpg'); background-size: cover; background-attachment: fixed; height: auto; margin-top: 0px; margin-bottom: 0px; display: block">
-    <div class="container mb-5 mb-md-6">
-      <div class="row justify-content-md-center">
-        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center">
-          <h2 class="pb-2">Send us a message</h2>
-          
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row justify-content-lg-center">
-        <div class="col-12 col-lg-9">
-          <div class="bg-white border rounded shadow-sm overflow-hidden">
-            <form action="#!">
-              <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
-                <div class="col-12">
-                  <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="fullname" value="" required>
-                </div>
-                <div class="col-12 col-md-6">
-                  <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                  <div class="input-group">
-                    <span class="input-group-text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                      </svg>
-                    </span>
-                    <input type="email" class="form-control" id="email" value="" required>
+        <div class="row justify-content-lg-center">
+          <div class="col-12 col-lg-9">
+            <div class="bg-white border rounded shadow-sm overflow-hidden">
+              <form action="#!">
+                <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                  <div class="col-12">
+                    <label for="fullname" class="form-label"
+                      >Full Name <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fullname"
+                      value=""
+                      required />
                   </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <label for="phone" class="form-label">Phone Number</label>
-                  <div class="input-group">
-                    <span class="input-group-text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                      </svg>
-                    </span>
-                    <input type="tel" class="form-control" id="phone" value="">
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label"
+                      >Email <span class="text-danger">*</span></label
+                    >
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-envelope"
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                      </span>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        value=""
+                        required />
+                    </div>
                   </div>
-                </div>
-                <div class="col-12">
-                  <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-                  <textarea class="form-control" id="message" rows="3" required></textarea>
-                </div>
+                  <div class="col-12 col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-telephone"
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                      </span>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        value="" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label"
+                      >Message <span class="text-danger">*</span></label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="3"
+                      required></textarea>
+                  </div>
 
-                <!-- Upload Files Input -->
-                
-                <div class="col-12">
-                  <p>Click on the "Choose File" button to upload your files:</p>
-                  <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
-                    <input id="fileInput" type="file" name="files" multiple>
-                  <!-- <form action="/action_page.php">
+                  <!-- Upload Files Input -->
+
+                  <div class="col-12">
+                    <p>
+                      Click on the "Choose File" button to upload your files:
+                    </p>
+                    <form
+                      id="uploadForm"
+                      action="/upload"
+                      method="post"
+                      enctype="multipart/form-data">
+                      <input id="fileInput" type="file" name="files" multiple />
+                      <!-- <form action="/action_page.php">
                   <input type="file" id="myFile" name="filename"> -->
-                  </form>
-                  <div id="fileList"></div>
-                </div>
+                    </form>
+                    <div id="fileList"></div>
+                  </div>
 
-                <div class="col-12">
-                  <div class="d-grid">
-                    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                  <div class="col-12">
+                    <div class="d-grid">
+                      <button class="btn btn-primary btn-lg" type="submit">
+                        Submit
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <!-- End of Contact Us Section -->
-  
-  <!-- Footer Section 2 -->
-  
-  <section class="footer-light-2" style="background-color: rgb(255, 216, 117);">
+    </section>
 
-    <!-- <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-          <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-              <img class="bi me-2" width="40" height="40" src="./favicon-icon-maroon.png" alt="">
-            </a>
-            <p class="text-body-secondary">© 2023</p>
-          </div>
-      
-          <div class="col mb-3">
-      
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Address</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">Suite 7 - 9, 1st Floor<br>St Andrews House,<br>Cnr S. Machel &amp; L. Takawira</li>
-              
-            </ul>
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Contact Numbers</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">+263 (242) 225 5851<br>+263 77 568 6754<br>+263 77 660 2420<br><br></li>
-            </ul>
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
-        </footer> -->
-      </div>
-    <div class="container-7">
-      <div class="footer-wrapper-two-2">
-        <a href="#" class="footer-brand-2 w-inline-block"><img src="./favicon-icon-maroon.png" loading="lazy" width="89" sizes="89px" alt=""></a>
-        <div class="footer-block-two-2">
-          <div class="footer-title-2">Address:</div>
-          <a href="#" class="footer-link-two-2">Suite 7 - 9, 1st Floor<br>St Andrews House,<br>Cnr S. Machel &amp; L. Takawira</a>
-        </div>
-        <div class="footer-block-two-2">
-          <div class="footer-title-2">Contacts:</div>
-          <a href="#" class="footer-link-two-2">+263 (242) 225 5851<br>+263 77 568 6754<br>+263 77 660 2420<br><br></a>
-        </div>
-      </div>
-      <div class="footer-divider-two-2"></div>
-      <div class="footer-bottom-2">
-        <div class="footer-copyright-2">© 2024 Solid Arts.CS. All rights reserved</div>
-        <div class="footer-social-block-two-2">
-          <a href="#" class="footer-social-link-2 w-inline-block"><img src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124ac76f12aaec_product%20icon-2.svg" loading="lazy" alt=""></a>
-          <a href="#" class="footer-social-link-2 w-inline-block"><img src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a4a9512aae0_product%20icon-1.svg" loading="lazy" alt=""></a>
-          <a href="#" class="footer-social-link-2 w-inline-block"><img src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a853712aad7_product%20icon.svg" loading="lazy" alt=""></a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- End of Contact Us Section -->
 
+    <!-- Footer Section 2 -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <section class="footer-light">
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <a href="#" class="footer-brand"
+            ><img
+              src="./favicon-icon-maroon.png"
+              loading="lazy"
+              width="89"
+              sizes="89px"
+              alt=""
+          /></a>
+          <div class="footer-block">
+            <div class="footer-title">Address:</div>
+            <a href="#" class="footer-link"
+              >Suite 7 - 9, 1st Floor<br />St Andrews House,<br />Cnr S. Machel
+              &amp; L. Takawira</a
+            >
+          </div>
+          <div class="footer-block">
+            <div class="footer-title">Contacts:</div>
+            <a href="#" class="footer-link"
+              >+263 (242) 225 5851<br />+263 77 568 6754<br />+263 77 660
+              2420<br /><br
+            /></a>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            © 2024 Solid Arts.CS. All rights reserved
+          </div>
+          <div class="footer-social-block">
+            <a href="#" class="footer-social-link"
+              ><img
+                src="./resources/svg-icons/facebook-icon.svg"
+                loading="lazy"
+                alt=""
+            /></a>
+            <a href="#" class="footer-social-link"
+              ><img
+                src="./resources/svg-icons/instagram-icon.svg"
+                loading="lazy"
+                alt=""
+            /></a>
+            <a href="#" class="footer-social-link"
+              ><img
+                src="./resources/svg-icons/x-icon.svg"
+                loading="lazy"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="./index.js"></script>

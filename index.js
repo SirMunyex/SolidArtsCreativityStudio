@@ -1,3 +1,5 @@
+// Mobile Navbar Script
+
 $(function () {
     $('#ChangeToggle').click(function () {
         $('#navbar-hamburger').toggleClass('hidden');
@@ -14,6 +16,8 @@ function myFunction() {
         x.style.display = "block";
     }
 }
+
+// End of Mobile Navbar Script
 
 // Form Control Script
 
@@ -61,3 +65,59 @@ document.addEventListener('DOMContentLoaded', () => {
         updateFileList();
     }
 })
+
+// End of Form Control Script
+
+
+
+// Beginning of Catalog Items Function
+
+function renderCatalogItems(sectionIndex) {
+    const catalogItemsContainer = document.getElementById(`catalogItems${sectionIndex + 1}`);
+    const section = catalogSections[sectionIndex];
+
+    section.items.forEach((item, index) => {
+        const itemContainer = document.createElement('div');
+        itemContainer.classList.add('catalog-item');
+
+        // Populate the item details
+        const imageElement = document.createElement('img');
+        imageElement.src = item.image;
+        imageElement.classList.add('item-image'); // Added class for styling
+        itemContainer.appendChild(imageElement);
+
+        const nameElement = document.createElement('h3');
+        nameElement.textContent = item.name;
+        itemContainer.appendChild(nameElement);
+
+        const descriptionElement = document.createElement('p');
+        descriptionElement.textContent = item.description;
+        descriptionElement.classList.add('description'); // Added class for styling
+        itemContainer.appendChild(descriptionElement);
+
+        const priceElement = document.createElement('p');
+        priceElement.textContent = `Price: ${item.price}`;
+        priceElement.classList.add('price'); // Added class for styling
+        itemContainer.appendChild(priceElement);
+
+        // Add a button to view details
+        // const viewDetailsButton = document.createElement('button');
+        // viewDetailsButton.textContent = 'View Details';
+        // viewDetailsButton.classList.add('view-details-button'); // Added class for styling
+        // viewDetailsButton.addEventListener('click', () => renderEnlargedForm(sectionIndex, index));
+        // itemContainer.appendChild(viewDetailsButton);
+
+        catalogItemsContainer.appendChild(itemContainer);
+    });
+}
+
+function renderCatalogSections() {
+    for (let i = 0; i < catalogSections.length; i++) {
+        renderCatalogItems(i);
+    }
+}
+
+// Call the function to render the catalog sections when the page loads
+window.onload = renderCatalogSections;
+
+// End of Catalog Items Function
