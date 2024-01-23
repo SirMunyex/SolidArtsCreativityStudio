@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 listItem.textContent = files[i].name;
 
                 const removeButton = document.createElement('button');
-                removeButton.innerHTML = '<img src="./resources/svg-icons/trashcan-icon.svg" alt="trashcan-icon">';
+                removeButton.textContent = 'Remove';
                 removeButton.addEventListener('click', () => {
                     removeFile(i);
                 });
