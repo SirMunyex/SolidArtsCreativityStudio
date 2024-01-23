@@ -112,7 +112,7 @@
                   <p class="lead">We are a leading provider of comprehensive design, print, and branding solutions. We are dedicated to delivering distinctive branding and marketing tools that yield tangible results for all our clients. We also offer <span style="color:brown; font-weight:bold" href="#">Alternative Media Solutions</span> designed to equip our clients with a competitive advantage in their respective market segments.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                   <button type="button" class="btn btn-primary btn-lg px-4 email me-md-2"> <img src="resources/email-icon-white.png" style="width: 20px; margin:0px; padding-right: 3px"><a href="mailto: solidarts.cs@gmail.com" style="text-decoration: none; color: white">Email Us</a></button>
-                  <button type="button" class="btn btn-success  whatsapp btn-lg px-4"> <img src="./resources/whatsapp-icon-white.png" style="width: 20px; margin:0px; padding: 0px"><a href="https://wa.me/message/MFQVFEKEPWLKG1" style="text-decoration: none; color: white">WhatsApp Us</a></button>
+                  <button type="button" class="btn btn-success  whatsapp btn-lg px-4"> <img src="./resources/whatsapp-icon-white.png" style="width: 20px; margin:0px; padding: 0px"><a href="https://wa.me/message/ZK4YGDP7GAO7I1" style="text-decoration: none; color: white">WhatsApp Us</a></button>
                 </div>
               </div>
             </div>
@@ -312,6 +312,19 @@
                   <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
                   <textarea class="form-control" id="message" rows="3" required></textarea>
                 </div>
+
+                <!-- Upload Files Input -->
+                
+                <div class="col-12">
+                  <p>Click on the "Choose File" button to upload your files:</p>
+                  <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+                    <input id="fileInput" type="file" name="files" multiple>
+                  <!-- <form action="/action_page.php">
+                  <input type="file" id="myFile" name="filename"> -->
+                  </form>
+                  <div id="fileList"></div>
+                </div>
+
                 <div class="col-12">
                   <div class="d-grid">
                     <button class="btn btn-primary btn-lg" type="submit">Submit</button>
