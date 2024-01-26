@@ -225,3 +225,68 @@
 }
 
 /* End of Upload files CSS */
+
+/* Beginning of Large Form Styling */
+
+#enlargedForm {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  border-radius: 0.375rem;
+}
+
+#enlargedFormImage {
+  max-width: 600px;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.enlarged-name {
+  font-size: 3rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.enlarged-description {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: 2rem 0;
+}
+
+.enlarged-price {
+  color: #009688;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.quote-button {
+  background-color: rgb(13, 96, 192);
+  border: 1px solid rgb(13, 96, 192);
+  color: #fff;
+  font-size: larger;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.quote-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 743px) {
+  #enlargedForm {
+    flex-direction: column;
+  }
+}
+
+/* Ending of Large Form Styling */

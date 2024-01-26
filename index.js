@@ -103,9 +103,14 @@ function renderCatalogItems(sectionIndex) {
         // Add a button to view details
         // const viewDetailsButton = document.createElement('button');
         // viewDetailsButton.textContent = 'View Details';
+
         // viewDetailsButton.classList.add('view-details-button'); // Added class for styling
         // viewDetailsButton.addEventListener('click', () => renderEnlargedForm(sectionIndex, index));
         // itemContainer.appendChild(viewDetailsButton);
+
+        itemContainer.addEventListener('click', () => {
+            goToEnlargedFormPage(item);
+        });
 
         catalogItemsContainer.appendChild(itemContainer);
     });
@@ -115,6 +120,15 @@ function renderCatalogSections() {
     for (let i = 0; i < catalogSections.length; i++) {
         renderCatalogItems(i);
     }
+}
+
+// Function to navigate to the enlarged form page with item details
+function goToEnlargedFormPage(item) {
+    // Construct the URL for the enlarged form page with item details as parameters
+    const url = `enlarged-form.html?name=${encodeURIComponent(item.name)}&description=${encodeURIComponent(item.description)}&price=${encodeURIComponent(item.price)}&image=${encodeURIComponent(item.image)}`;
+
+    // Navigate to the new page
+    window.location.href = url;
 }
 
 // Call the function to render the catalog sections when the page loads
