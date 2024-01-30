@@ -1,3 +1,47 @@
+.content-grid {
+  --padding-inline: 1rem;
+  --content-max-width: 900px;
+  --breakout-max-width: 1200px;
+
+  --breakout-size: calc(
+    (var(--breakout-max-width) - var(--content-max-width)) / 2
+  );
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(var(--padding-inline), 1fr)
+    [breakout-start] minmax(0, var(--breakout-size))
+    [content-start] min(
+      100% - (var(--padding-inline) * 2),
+      var(--content-max-width)
+    )
+    [content-end]
+    minmax(0, var(--breakout-size)) [breakout-end]
+    minmax(var(--padding-inline), 1fr) [full-width-end];
+}
+
+.content-grid > :not(.breakout, .full-width),
+.full-width > :not(.breakout, .full-width) {
+  grid-column: content;
+}
+
+.content-grid > .breakout {
+  grid-column: breakout;
+}
+
+.content-grid > .full-width {
+  grid-column: full-width;
+
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+img.full-width {
+  width: 100%;
+  max-height: 45vh;
+  object-fit: cover;
+}
+
 .allsides-1 {
   background: linear-gradient(currentColor 0 0) 100% 0,
     linear-gradient(currentColor 0 0) 0 0,
@@ -10,6 +54,104 @@
 .allsides-1:hover {
   --d: 100%;
 }
+
+/* Beginning of Navbar CSS */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navibar {
+  background-color: rgb(128, 0, 0);
+  padding: 15px 20px 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* max-width: 100%; */
+}
+
+.navibar-brand > img {
+  width: 200px;
+}
+
+.navibar-toggler {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: white;
+  border: none;
+  background: none;
+  margin-left: auto;
+}
+
+.navibar-items {
+  display: flex;
+  align-items: center;
+}
+
+.navibar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navibar-menu li {
+  margin: 0 15px;
+}
+
+.navibar-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navibar-text {
+  margin-left: 15px;
+}
+
+@media (max-width: 1006px) {
+  .navibar-text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navibar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 50%;
+    background-color: rgb(128, 0, 0);
+    transition: transform 1.1s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .navibar-menu.show {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .navibar-menu li {
+    text-align: left;
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+
+  .navibar-toggler {
+    display: block;
+    right: 0;
+  }
+}
+
+/* End of Navbar CSS */
 
 .product-items {
   list-style: none;
@@ -42,24 +184,12 @@
   color: white;
 }
 
-.navlist :hover {
-  background-color: goldenrod;
-}
-
-.navbar {
-  height: 100%;
-  padding: 0px;
-  top: 0;
-  position: sticky;
-  z-index: 1;
-}
-
 .email {
   background-color: rgb(170, 16, 16);
   border: none;
 }
 
-/* footer 2 css */
+/* Beginning of footer 2 css */
 
 .footer-light {
   background-color: rgb(255, 216, 117);
@@ -146,55 +276,7 @@
   margin-left: 12px;
 }
 
-/* Mobile Navigation Style */
-@media (min-width: 993px) {
-  .mobile-nav {
-    display: none;
-  }
-}
-@media (max-width: 992px) {
-  .navbar {
-    display: none;
-  }
-}
-
-.mobile-nav {
-  overflow: hidden;
-  position: relative;
-}
-
-.mobile-nav #myLinks {
-  display: none;
-}
-
-.mobile-nav a {
-  color: white;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.mobile-nav a.icon {
-  color: #e8ebea;
-  display: block;
-  position: absolute;
-  right: 0;
-  margin-right: 10px;
-  top: 10px;
-}
-
-.mobile-nav a:hover {
-  background-color: #ffc107;
-  color: black;
-}
-
-.active2 {
-  background-color: rgb(128, 0, 0);
-  color: white;
-}
-
-/* End of Mobile Navigation Style */
+/* Ending of footer 2 css */
 
 /* Upload files CSS */
 
@@ -274,7 +356,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  max-width: 300px;
+  max-width: 250px;
   transition: transform 0.3s ease-in-out;
 }
 

@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="./catalog-styles.css" />
   </head>
   <body>
+    <!-- Responsive Navbar -->
+
+    <div class="navibar">
+      <div class="navibar-brand">
+        <img
+          src="./resources/logo-side-by-side-white.png"
+          alt="our company logo" />
+      </div>
+      <button class="navibar-toggler" onclick="toggleMenu()">☰</button>
+      <div class="navibar-items">
+        <ul class="navibar-menu">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./Under Construction/portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navibar-text">Champions Do More</div>
+    </div>
+
+    <!-- End of Responsive Navbar -->
+
     <div id="enlargedForm">
       <div id="enlargedFormImage"></div>
       <div id="enlargedFormDetails"></div>
@@ -72,7 +103,7 @@
     </section>
 
     <!-- End of Footer Section -->
-
+    <script src="./index.js"></script>
     <script src="./enlargedForm.js"></script>
     <script src="./data.js"></script>
   </body>

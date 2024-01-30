@@ -9,100 +9,36 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- Mobile Navigation Menu -->
-    <div class="mobile-nav bg-primary">
-      <a href="#home" class="active2"
-        ><img
+    <!-- Responsive Navbar -->
+
+    <div class="navibar">
+      <div class="navibar-brand">
+        <img
           src="./resources/logo-side-by-side-white.png"
-          style="width: 220px"
-      /></a>
-      <div id="myLinks">
-        <a class="nav-link active" aria-current="page" href="./index.html"
-          >Home</a
-        >
-        <a class="nav-link" href="./products.html">Products</a>
-        <a class="nav-link" href="./Under Construction/portfolio.html"
-          >Portfolio</a
-        >
-        <a class="nav-link" href="#home">About</a>
-        <a class="nav-link" href="#Contact" style="text-wrap: nowrap"
-          >Contact Us</a
-        >
+          alt="our company logo" />
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i
-          ><img
-            src="./resources/svg-icons/icons8-hamburger.svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-        /></i>
-      </a>
+      <button class="navibar-toggler" onclick="toggleMenu()">☰</button>
+      <div class="navibar-items">
+        <ul class="navibar-menu">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./Under Construction/portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navibar-text">Champions Do More</div>
     </div>
 
-    <!-- Collapsible Navigation Bar -->
-
-    <div class="navbar bg-primary navbar-fixed-top" data-bs-theme="dark">
-      <div class="container container-fluid">
-        <div class="navbar-brand">
-          <img
-            src="./resources/logo-side-by-side-white.png"
-            style="width: 220px" />
-        </div>
-
-        <nav class="navbar-expand-md">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navlist navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="button">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="button">
-                  <a class="nav-link" href="./products.html">Products</a>
-                </li>
-                <li class="button">
-                  <a class="nav-link" href="./Under Construction/portfolio.html"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="button">
-                  <a class="nav-link" href="#home">About</a>
-                </li>
-                <li class="button">
-                  <a class="nav-link" href="#Contact" style="text-wrap: nowrap"
-                    >Contact Us</a
-                  >
-                </li>
-                <li class="button">
-                  <a class="nav-link" href="#home">Blog</a>
-                </li>
-              </ul>
-              <!-- <form class="d-flex" role="search">
-             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-             <button class="btn btn-outline-success" type="submit">Search</button>
-           </form> -->
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
+    <!-- End of Responsive Navbar -->
 
     <!-- Hero Section -->
 

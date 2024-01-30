@@ -1,21 +1,65 @@
-// Mobile Navbar Script
+// Navbar function
 
-$(function () {
-    $('#ChangeToggle').click(function () {
-        $('#navbar-hamburger').toggleClass('hidden');
-        $('#navbar-close').toggleClass('hidden');
+document.addEventListener('DOMContentLoaded', function () {
+    const navibarMenu = document.querySelector('.navibar-menu');
+    document.addEventListener('click', function (event) {
+        const isClickInsideNavbar = document.querySelector('.navibar').contains(event.target);
+        const isClickInsideMenu = navibarMenu.contains(event.target);
+        if (!isClickInsideNavbar && !isClickInsideMenu) {
+            closeMenu();
+        }
+    });
+
+    const links = document.querySelectorAll('.navibar-menu a');
+    links.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            // event.preventDefault();
+            const linkText = link.innerText;
+            // handleLinkClick(linkText);
+            closeMenu();
+        });
     });
 });
 
-
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+function toggleMenu() {
+    const navibarMenu = document.querySelector('.navibar-menu');
+    navibarMenu.classList.toggle('show');
 }
+
+function closeMenu() {
+    const navibarMenu = document.querySelector('.navibar-menu');
+    navibarMenu.classList.remove('show');
+}
+
+// function handleLinkClick(linkText) {
+// Modify this function to perform actions on link click
+// console.log('Link clicked:', linkText);
+// For example, you can navigate to the href link.
+// const hrefLink = linkText.toLowerCase(); // Assuming href links are in lowercase
+// window.location.href = `#${hrefLink}`;
+// You can also use other methods to navigate, depending on your requirements
+// }
+
+// End of Navbar function
+
+// Mobile Navbar Script
+
+// $(function () {
+//     $('#ChangeToggle').click(function () {
+//         $('#navbar-hamburger').toggleClass('hidden');
+//         $('#navbar-close').toggleClass('hidden');
+//     });
+// });
+
+
+// function myFunction() {
+//     var x = document.getElementById("myLinks");
+//     if (x.style.display === "block") {
+//         x.style.display = "none";
+//     } else {
+//         x.style.display = "block";
+//     }
+// }
 
 // End of Mobile Navbar Script
 

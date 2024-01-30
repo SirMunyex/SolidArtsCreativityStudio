@@ -4,8 +4,8 @@
   background-color: #fffdfd00;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
+  /* flex-direction: column;
+  justify-content: flex-start; */
   align-items: start;
   max-width: 1100px;
   margin: auto;
@@ -24,7 +24,14 @@
 .catalog-items-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 2rem;
+}
+
+@media (max-width: 1004px) {
+  .catalog-items-container {
+    justify-content: center;
+  }
 }
 
 .catalog-item {
