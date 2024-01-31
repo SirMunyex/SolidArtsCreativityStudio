@@ -1,4 +1,4 @@
-// Navbar function
+// Beginning of Navbar function
 
 document.addEventListener('DOMContentLoaded', function () {
     const navibarMenu = document.querySelector('.navibar-menu');
@@ -31,39 +31,9 @@ function closeMenu() {
     navibarMenu.classList.remove('show');
 }
 
-// function handleLinkClick(linkText) {
-// Modify this function to perform actions on link click
-// console.log('Link clicked:', linkText);
-// For example, you can navigate to the href link.
-// const hrefLink = linkText.toLowerCase(); // Assuming href links are in lowercase
-// window.location.href = `#${hrefLink}`;
-// You can also use other methods to navigate, depending on your requirements
-// }
-
 // End of Navbar function
 
-// Mobile Navbar Script
-
-// $(function () {
-//     $('#ChangeToggle').click(function () {
-//         $('#navbar-hamburger').toggleClass('hidden');
-//         $('#navbar-close').toggleClass('hidden');
-//     });
-// });
-
-
-// function myFunction() {
-//     var x = document.getElementById("myLinks");
-//     if (x.style.display === "block") {
-//         x.style.display = "none";
-//     } else {
-//         x.style.display = "block";
-//     }
-// }
-
-// End of Mobile Navbar Script
-
-// Form Control Script
+// Beginning of Form Control Script
 
 document.addEventListener('DOMContentLoaded', () => {
     const uploadForm = document.getElementById('uploadForm');
@@ -111,8 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // End of Form Control Script
-
-
 
 // Beginning of Catalog Items Function
 
