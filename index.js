@@ -33,6 +33,10 @@ function closeMenu() {
 
 // End of Navbar function
 
+// Beginning of Horizontal Scroll Menu
+
+// Ending of Horizontal Scroll Menu
+
 // Beginning of Form Control Script
 
 document.addEventListener('DOMContentLoaded', () => {

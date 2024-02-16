@@ -7,6 +7,7 @@
 
     <link href="./css/main.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./horizontal-carousel-slider.css" />
   </head>
   <body>
     <!-- Responsive Navbar -->
@@ -96,6 +97,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
               Print - Brand - Design
@@ -142,6 +144,97 @@
 
     <!-- End of Hero Section -->
 
+    <!-- Beginning of Scroll Menu -->
+
+    <section
+      class=""
+      style="
+        background-image: url('./resources/services-horizontal-images/services-horizontal-scroll-background.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: block;
+      ">
+      <div id="container">
+        <div id="slider-container">
+          <span onclick="slideRight()" class="btn"></span>
+          <ul id="slider" class="card-list">
+            <li class="card slide">
+              <img
+                src="./resources/services-horizontal-images/branding.png"
+                alt="branding icon" />
+              <div class="title">Branding</div>
+            </li>
+            <li class="card slide">
+              <img
+                src="./resources/services-horizontal-images/digital-printing.png"
+                alt="digital services icon" />
+              <div class="title">Digital Printing</div>
+            </li>
+            <li class="card slide">
+              <img
+                src="./resources/services-horizontal-images/embroidery.png"
+                alt="embroidery icon" />
+              <div class="title">Embroidery</div>
+            </li>
+            <li class="card slide">
+              <img
+                src="./resources/services-horizontal-images/fabric-printing.png"
+                alt="fabric printing icon" />
+              <div class="title">Fabric Printing</div>
+            </li>
+            <li class="card slide">
+              <img
+                src="./resources/services-horizontal-images/foiling-and-embossing.png"
+                alt="foiling and embossing icon" />
+              <div class="title">Foiling and Embossing</div>
+            </li>
+            <li class="card slide">
+              <img
+                src="./resources/services-horizontal-images/graphic-design.png"
+                alt="graphic design icon" />
+              <div class="title">Graphic Design</div>
+            </li>
+            <li class="card slide">
+              <img
+                src="./resources/services-horizontal-images/knitting.png"
+                alt="knitting icon" />
+              <div class="title">Knitting</div>
+            </li>
+            <li class="card slide">
+              <img
+                src="./resources/services-horizontal-images/large-format.png"
+                alt="large format icon" />
+              <div class="title">Large Format Printing</div>
+            </li>
+            <li class="card slide">
+              <img
+                src="./resources/services-horizontal-images/lithography.png"
+                alt="lithography icon" />
+              <div class="title">Lithography</div>
+            </li>
+            <li class="card slide">
+              <img
+                src="./resources/services-horizontal-images/sewing.png"
+                alt="sewing icon" />
+              <div class="title">Sewing</div>
+            </li>
+            <li class="card slide">
+              <img
+                src="./resources/services-horizontal-images/stationery.png"
+                alt="stationery icon" />
+              <div class="title">Stationery</div>
+            </li>
+          </ul>
+          <span onclick="slideLeft()" class="btn"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ending of Scroll Menu -->
+
     <!-- Featured Services Section -->
 
     <section-2>
@@ -152,9 +245,10 @@
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
               <img
-                src="./resources/canvas_printing.png"
+                src="./resources/featured-services/Design.jpg"
                 height="300px"
-                style="border: transparent; border-radius: 25px" />
+                style="border: transparent; border-radius: 25px"
+                alt="Designing Image" />
             </div>
             <h3 class="fs-2 text-body-emphasis text-muted">Design</h3>
             <p>
@@ -173,9 +267,10 @@
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
               <img
-                src="./resources/large_format_printing.png"
+                src="./resources/featured-services/Print.jpg"
                 height="300px"
-                style="border: transparent; border-radius: 25px" />
+                style="border: transparent; border-radius: 25px"
+                alt="Printing Image" />
             </div>
             <h3 class="fs-2 text-body-emphasis text-muted">Print</h3>
             <p>
@@ -193,9 +288,10 @@
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
               <img
-                src="./resources/indoor_outdoor_banners.png"
+                src="./resources/featured-services/Brand.jpg"
                 height="300px"
-                style="border: transparent; border-radius: 25px" />
+                style="border: transparent; border-radius: 25px"
+                alt="Branding Image" />
             </div>
             <h3 class="fs-2 text-body-emphasis text-muted">Branding</h3>
             <p>
@@ -231,10 +327,10 @@
           class="d-lg-flex flex-row mb-3 justify-content-between text-center">
           <div class="mb-auto px-4">
             <img
-              src="./resources/placeholder-image.png"
+              src="./resources/svg-icons/Order.svg"
               style="height: 200px; border-radius: 50%"
               class="my-4"
-              alt="" />
+              alt="Ordering Image" />
             <h4 class="mb-4 text-center">1. Place Your Order</h4>
             <p class="text-center">
               Have a chat to one of our friendly staff members. They will point
@@ -248,10 +344,10 @@
           </div>
           <div class="px-4">
             <img
-              src="./resources/placeholder-image.png"
+              src="./resources/svg-icons/Design.svg"
               style="height: 200px; border-radius: 50%"
               class="my-4"
-              alt="" />
+              alt="Designing Image" />
             <h4 class="mb-4 text-center">
               2. We Collobrate Together On Design
             </h4>
@@ -270,10 +366,10 @@
           </div>
           <div class="px-4">
             <img
-              src="./resources/placeholder-image.png"
+              src="./resources/svg-icons/Print.svg"
               style="height: 200px; border-radius: 50%"
               class="my-4"
-              alt="" />
+              alt="Printing Image" />
             <h4 class="mb-4 text-center">3. We Print</h4>
             <p class="text-center">
               Once artworks have been approved, we then move them into
@@ -287,10 +383,10 @@
           </div>
           <div class="px-4">
             <img
-              src="./resources/placeholder-image.png"
+              src="./resources/svg-icons/Deliver.svg"
               style="height: 200px; border-radius: 50%"
               class="my-4"
-              alt="" />
+              alt="Delivering Image" />
             <h4 class="mb-4 text-center">4. We Deliver or You Pick Up</h4>
             <p class="text-center">
               Once you product is finished, we can ship all around Zimbawe from
@@ -554,5 +650,6 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="./index.js"></script>
+    <script src="./horizontal-carousel-slider.js"></script>
   </body>
 </html>

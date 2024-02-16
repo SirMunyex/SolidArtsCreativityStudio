@@ -213,6 +213,15 @@ body {
   display: flex;
 }
 
+@media (max-width: 596px) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .footer-block {
+    margin-top: 30px;
+  }
+}
+
 .footer-block {
   flex-direction: column;
   justify-content: flex-start;
@@ -258,6 +267,18 @@ body {
   justify-content: space-between;
   align-items: center;
   display: flex;
+}
+
+@media (max-width: 596px) {
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-social-block {
+    padding-top: 20px;
+  }
 }
 
 .footer-copyright {
