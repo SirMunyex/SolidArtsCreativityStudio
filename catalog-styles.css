@@ -49,7 +49,14 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-img {
+.item-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.enlarged-image {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
