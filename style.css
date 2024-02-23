@@ -105,9 +105,19 @@ body {
   margin: 0 15px;
 }
 
-.navibar-menu a {
+.navi-item {
   text-decoration: none;
   color: white;
+  font-weight: bold;
+}
+
+.navi-item:hover {
+  color: rgb(255, 216, 117);
+}
+
+.active {
+  color: rgb(255, 216, 117);
+  text-decoration: none;
   font-weight: bold;
 }
 

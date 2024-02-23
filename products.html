@@ -1,199 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solid Arts.CS</title>
-    
-    <link href="./css/main.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./catalog-styles.css">
 
-</head>
+    <link href="./css/main.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./catalog-styles.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Responsive Navbar -->
 
-  <!-- Responsive Navbar -->
-
-  <div class="navibar">
-    <div class="navibar-brand"><img src="./resources/logo-side-by-side-white.png" alt="our company logo"></div>
-    <button class="navibar-toggler" onclick="toggleMenu()">☰</button>
-    <div class="navibar-items">
-      <ul class="navibar-menu">
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="./products.html">Products</a>
-        </li>
-        <li>
-          <a href="./Under Construction/portfolio.html">Portfolio</a>
-        </li>
-        <li>
-          <a href="./about.html">About</a>
-        </li>
-        <li><a href="./index.html#Contact">Contact Us</a></li>
-      </ul>
+    <div class="navibar">
+      <div class="navibar-brand">
+        <img
+          src="./resources/logo-side-by-side-white.png"
+          alt="our company logo" />
+      </div>
+      <button class="navibar-toggler" onclick="toggleMenu()">☰</button>
+      <div class="navibar-items">
+        <ul class="navibar-menu">
+          <li>
+            <a class="navi-item" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="active" href="./products.html">Products</a>
+          </li>
+          <li>
+            <a class="navi-item" href="./Under Construction/portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="navi-item" href="./about.html">About</a>
+          </li>
+          <li>
+            <a class="navi-item" href="./index.html#Contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navibar-text">Champions Do More</div>
     </div>
-    <div class="navibar-text">Champions Do More</div>
-  </div>
 
-  <!-- End of Responsive Navbar -->
+    <!-- End of Responsive Navbar -->
 
-<!-- Beginning of Catalog Items -->
+    <!-- Beginning of Catalog Items -->
 
-<div class="wrapper">
-  <!-- Catalog Section 1 -->
-  <h2 class="catalog-header">T-Shirt Printing</h2>
-  <section id="catalog1" class="catalog-section">
-    <div id="catalogItems1" class="catalog-items-container"></div>
-  </section>
+    <div class="wrapper">
+      <!-- Catalog Section 1 -->
+      <h2 class="catalog-header">T-Shirt Printing</h2>
+      <section id="catalog1" class="catalog-section">
+        <div id="catalogItems1" class="catalog-items-container"></div>
+      </section>
 
-  <!-- Catalog Section 2 -->
-  <h2 class="catalog-header">Signage</h2>
-  <section id="catalog2" class="catalog-section">
-    <div id="catalogItems2" class="catalog-items-container"></div>
-  </section>
+      <!-- Catalog Section 2 -->
+      <h2 class="catalog-header">Signage</h2>
+      <section id="catalog2" class="catalog-section">
+        <div id="catalogItems2" class="catalog-items-container"></div>
+      </section>
 
-  <!-- Catalog Section 3 -->
-  <h2 class="catalog-header">Car Branding</h2>
-  <section id="catalog3" class="catalog-section">
-    <div id="catalogItems3" class="catalog-items-container"></div>
-  </section>
+      <!-- Catalog Section 3 -->
+      <h2 class="catalog-header">Car Branding</h2>
+      <section id="catalog3" class="catalog-section">
+        <div id="catalogItems3" class="catalog-items-container"></div>
+      </section>
 
-  <!-- Catalog Section 4 -->
-  <h2 class="catalog-header">Exhibition Banners</h2>
-  <section id="catalog4" class="catalog-section">
-    <div id="catalogItems4" class="catalog-items-container"></div>
-  </section>
+      <!-- Catalog Section 4 -->
+      <h2 class="catalog-header">Exhibition Banners</h2>
+      <section id="catalog4" class="catalog-section">
+        <div id="catalogItems4" class="catalog-items-container"></div>
+      </section>
 
-  <!-- Catalog Section 5 -->
-  <h2 class="catalog-header">Clothing</h2>
-  <section id="catalog5" class="catalog-section">
-    <div id="catalogItems5" class="catalog-items-container"></div>
-  </section>
-</div>
-
-<!-- End of Catalog Items -->
-
-<section class="products container container-fluid">
-
-  
-
-
-
-    <!-- <ul class="product-items">
-        <li  class="product-card">
-            <div class="card" style="width: 18rem;">
-            <img src="./resources/product-images/backdrop-banner.jpg" class="card-img-top" alt="back-drop banner image">
-            <div class="card-body">
-              <h5 class="card-title">Back-drop Banner</h5>
-              <p class="card-text">From <span>$120</span></p>
-              <a href="./index.html#Contact" target="_blank" class="btn btn-primary">Get a quote</a>
-            </div>
-          </div>
-        </li>
-        
-        <li class="product-card">
-            <div class="card" style="width: 18rem;">
-            <img src="./resources/product-images/popup-banners.jpg" class="card-img-top" alt="pop-up banner image">
-            <div class="card-body">
-              <h5 class="card-title">Pop-up Banner</h5>
-              <p class="card-text">From <span>$50</span></p>
-              <a href="./index.html#Contact" target="_blank" class="btn btn-primary">Get a quote</a>
-            </div>
-          </div>
-        </li>
-        <li class="product-card">
-            <div class="card" style="width: 18rem;">
-            <img src="./resources/product-images/gazebo.jpg" class="card-img-top" alt="gazebo image">
-            <div class="card-body">
-              <h5 class="card-title">Gazebo</h5>
-              <p class="card-text">From <span>$320</span></p>
-              <a href="./index.html#Contact" target="_blank" class="btn btn-primary">Get a quote</a>
-            </div>
-          </div>
-        </li>
-    </ul> -->
-
-</section>
-
-
-
-
-
-
-  <section class="footer-light-2" style="background-color: rgb(255, 216, 117);">
-
-    <!-- <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-          <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-              <img class="bi me-2" width="40" height="40" src="./favicon-icon-maroon.png" alt="">
-            </a>
-            <p class="text-body-secondary">© 2023</p>
-          </div>
-      
-          <div class="col mb-3">
-      
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Address</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">Suite 7 - 9, 1st Floor<br>St Andrews House,<br>Cnr S. Machel &amp; L. Takawira</li>
-              
-            </ul>
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Contact Numbers</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">+263 (242) 225 5851<br>+263 77 568 6754<br>+263 77 660 2420<br><br></li>
-            </ul>
-          </div>
-      
-          <div class="col mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
-        </footer> -->
-      </div>
-    <div class="container">
-      <div class="footer-wrapper-two-2">
-        <a href="#" class="footer-brand-2 w-inline-block"><img src="./favicon-icon-maroon.png" loading="lazy" width="89" sizes="89px" alt=""></a>
-        <div class="footer-block-two-2">
-          <div class="footer-title-2">Address:</div>
-          <a href="#" class="footer-link-two-2">Suite 7 - 9, 1st Floor<br>St Andrews House,<br>Cnr S. Machel &amp; L. Takawira</a>
-        </div>
-        <div class="footer-block-two-2">
-          <div class="footer-title-2">Contacts:</div>
-          <a href="#" class="footer-link-two-2">+263 (242) 225 5851<br>+263 77 568 6754<br>+263 77 660 2420<br><br></a>
-        </div>
-      </div>
-      <div class="footer-divider-two-2"></div>
-      <div class="footer-bottom-2">
-        <div class="footer-copyright-2">© 2024 Solid Arts.CS. All rights reserved</div>
-        <div class="footer-social-block-two-2">
-          <a href="#" class="footer-social-link-2 w-inline-block"><img src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124ac76f12aaec_product%20icon-2.svg" loading="lazy" alt=""></a>
-          <a href="#" class="footer-social-link-2 w-inline-block"><img src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a4a9512aae0_product%20icon-1.svg" loading="lazy" alt=""></a>
-          <a href="#" class="footer-social-link-2 w-inline-block"><img src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a853712aad7_product%20icon.svg" loading="lazy" alt=""></a>
-        </div>
-      </div>
+      <!-- Catalog Section 5 -->
+      <h2 class="catalog-header">Clothing</h2>
+      <section id="catalog5" class="catalog-section">
+        <div id="catalogItems5" class="catalog-items-container"></div>
+      </section>
     </div>
-  </section>
 
-  <script src="./catalogData.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- End of Catalog Items -->
+
+    <section class="products container container-fluid"></section>
+
+    <!-- Beginning of Footer Section -->
+
+    <section class="footer-light">
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <a href="#" class="footer-brand"
+            ><img
+              src="./favicon-icon-maroon.png"
+              loading="lazy"
+              width="89"
+              sizes="89px"
+              alt=""
+          /></a>
+          <div class="footer-block">
+            <div class="footer-title">Address:</div>
+            <a href="#" class="footer-link"
+              >Suite 7 - 9, 1st Floor<br />St Andrews House,<br />Cnr S. Machel
+              &amp; L. Takawira</a
+            >
+          </div>
+          <div class="footer-block">
+            <div class="footer-title">Contacts:</div>
+            <a href="#" class="footer-link"
+              >+263 (242) 225 5851<br />+263 77 568 6754<br />+263 77 660
+              2420<br /><br
+            /></a>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            © 2024 Solid Arts.CS. All rights reserved
+          </div>
+          <div class="footer-social-block">
+            <a
+              href="https://www.facebook.com/solidartscreativitystudio"
+              class="footer-social-link"
+              ><img
+                src="./resources/svg-icons/facebook-icon.svg"
+                loading="lazy"
+                alt=""
+            /></a>
+            <a
+              href="https://www.instagram.com/solid_arts_creativity_studio?igsh=MWE5MXhiaWoydmJmeg"
+              class="footer-social-link"
+              ><img
+                src="./resources/svg-icons/instagram-icon.svg"
+                loading="lazy"
+                alt=""
+            /></a>
+            <a
+              href="https://www.tiktok.com/@solidartscs?_r=1&_d=e651ki3hh7691e&sec_uid=MS4wLjABAAAAmpPwvhutpTb7aMhpfcxWHAo-cjKqch29WsaRKiOFaV5Xgz6gyc0U2Z-QrUHtp0hz&share_author_id=7076322040446272517&sharer_language=en&source=h5_m&u_code=e0ki63h898g04m&timestamp=1708196684&user_id=7076322040446272517&sec_user_id=MS4wLjABAAAAmpPwvhutpTb7aMhpfcxWHAo-cjKqch29WsaRKiOFaV5Xgz6gyc0U2Z-QrUHtp0hz&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7335846137926764293&share_link_id=55c69dce-d576-4f2e-b711-a7f8c29f7e2f&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1"
+              class="footer-social-link"
+              ><img
+                src="./resources/svg-icons/x-icon.svg"
+                loading="lazy"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Footer Section -->
+
+    <script src="./catalogData.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="./index.js"></script>
-</body>
-  
+  </body>
 </html>
