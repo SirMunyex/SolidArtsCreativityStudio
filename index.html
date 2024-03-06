@@ -28,9 +28,7 @@
             <a class="navi-item" href="./products.html">Products</a>
           </li>
           <li>
-            <a class="navi-item" href="./Under Construction/portfolio.html"
-              >Portfolio</a
-            >
+            <a class="navi-item" href="./portfolio.html">Portfolio</a>
           </li>
           <li>
             <a class="navi-item" href="./about.html">About</a>
@@ -236,7 +234,7 @@
       ">
       <div id="container">
         <div id="slider-container">
-          <span onclick="slideRight()" class="btn"></span>
+          <span onclick="slideRight()" class="btn move-style"></span>
           <ul id="slider" class="card-list">
             <li class="card slide">
               <img
@@ -305,7 +303,7 @@
               <div class="title">Stationery</div>
             </li>
           </ul>
-          <span onclick="slideLeft()" class="btn"></span>
+          <span onclick="slideLeft()" class="btn move-style"></span>
         </div>
       </div>
     </section>
@@ -486,6 +484,17 @@
                 action="https://formsubmit.co/ffdff6f5246b6eeb637447953a5c6507"
                 method="POST"
                 enctype="multipart/form-data">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none" />
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_capture" vlaue="false" />
+
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://sirmunyex.github.io/SolidArtsCreativityStudio/success.html" />
+
                 <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                   <div class="col-12">
                     <label for="fullname" class="form-label"
@@ -495,7 +504,7 @@
                       type="text"
                       class="form-control"
                       name="fullname"
-                      id="fullname"
+                      id="Fullname"
                       placeholder="Fullname"
                       required />
                   </div>
@@ -543,7 +552,7 @@
                       <input
                         type="tel"
                         class="form-control"
-                        name="phone"
+                        name="Phone Number"
                         id="phone"
                         placeholder="+263-099 999 9999" />
                     </div>
@@ -555,7 +564,7 @@
                     <textarea
                       class="form-control"
                       id="message"
-                      name="comments, questions"
+                      name="Message"
                       placeholder="Enter your message here..."
                       rows="3"
                       required></textarea>
