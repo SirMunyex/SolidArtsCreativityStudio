@@ -12,13 +12,15 @@
   text-align: center;
   margin-bottom: 100px;
 }
-.logo {
-  margin-bottom: 20px;
-}
 h1 {
   font-size: 36px;
   color: #333;
   margin-bottom: 10px;
+}
+.coming-soon {
+  max-width: 100%;
+  height: auto;
+  margin-top: 40px;
 }
 p {
   font-size: 18px;
@@ -29,13 +31,4 @@ p {
   color: #4caf50;
   text-decoration: none;
   font-weight: bold;
-}
-
-.footer-light {
-  position: absolute;
-  bottom: 0;
-}
-.footer-container {
-  position: static;
-  bottom: 0;
 }
