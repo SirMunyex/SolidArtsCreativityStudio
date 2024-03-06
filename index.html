@@ -494,8 +494,9 @@
                     <input
                       type="text"
                       class="form-control"
+                      name="fullname"
                       id="fullname"
-                      value=""
+                      value="fullname"
                       required />
                   </div>
                   <div class="col-12 col-md-6">
@@ -518,8 +519,9 @@
                       <input
                         type="email"
                         class="form-control"
+                        name="email"
                         id="email"
-                        value=""
+                        value="email"
                         required />
                     </div>
                   </div>
@@ -541,8 +543,9 @@
                       <input
                         type="tel"
                         class="form-control"
+                        name="phone"
                         id="phone"
-                        value="" />
+                        value="phone" />
                     </div>
                   </div>
                   <div class="col-12">
@@ -552,6 +555,7 @@
                     <textarea
                       class="form-control"
                       id="message"
+                      name="comments, questions"
                       rows="3"
                       required></textarea>
                   </div>
@@ -562,7 +566,12 @@
                     <p>
                       Click on the "Choose File" button to upload your files:
                     </p>
-                    <input id="fileInput" type="file" name="files" multiple />
+                    <input
+                      id="fileInput"
+                      type="file"
+                      name="files"
+                      value="files"
+                      multiple />
                     <div id="fileList"></div>
                   </div>
 
