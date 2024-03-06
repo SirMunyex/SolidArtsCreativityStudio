@@ -482,7 +482,10 @@
         <div class="row justify-content-lg-center">
           <div class="col-12 col-lg-9">
             <div class="bg-white border rounded shadow-sm overflow-hidden">
-              <form action="#!">
+              <form
+                action="https://formsubmit.co/solidarts.ent@gmail.com"
+                method="POST"
+                enctype="multipart/form-data">
                 <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                   <div class="col-12">
                     <label for="fullname" class="form-label"
@@ -559,15 +562,7 @@
                     <p>
                       Click on the "Choose File" button to upload your files:
                     </p>
-                    <form
-                      id="uploadForm"
-                      action="/upload"
-                      method="post"
-                      enctype="multipart/form-data">
-                      <input id="fileInput" type="file" name="files" multiple />
-                      <!-- <form action="/action_page.php">
-                  <input type="file" id="myFile" name="filename"> -->
-                    </form>
+                    <input id="fileInput" type="file" name="files" multiple />
                     <div id="fileList"></div>
                   </div>
 
@@ -661,5 +656,6 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="./index.js"></script>
     <script src="./horizontal-carousel-slider.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

@@ -33,10 +33,6 @@ function closeMenu() {
 
 // End of Navbar function
 
-// Beginning of Horizontal Scroll Menu
-
-// Ending of Horizontal Scroll Menu
-
 // Beginning of Form Control Script
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -85,6 +81,23 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // End of Form Control Script
+
+// Beginning of send email script
+function sendEmail() {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "username",
+        Password: "password",
+        To: 'them@website.com',
+        From: "you@isp.com",
+        Subject: "This is the subject",
+        Body: "And this is the body"
+    }).then(
+        message => alert(message)
+    );
+}
+
+// Ending of send email script
 
 // Beginning of Catalog Items Function
 
